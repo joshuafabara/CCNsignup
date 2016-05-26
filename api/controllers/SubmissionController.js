@@ -4,7 +4,7 @@
  * @description :: Server-side logic for managing Submissions
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
-var sendgrid_api_key = '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';
+var sendgrid_api_key = '';
 var sendgrid  = require('sendgrid')(sendgrid_api_key);
 module.exports = {
 	
