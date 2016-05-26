@@ -1,0 +1,336 @@
+/**
+ * importer.less
+ *
+ * By default, new Sails projects are configured to compile this file
+ * from LESS to CSS.  Unlike CSS files, LESS files are not compiled and
+ * included automatically unless they are imported below.
+ *
+ * The LESS files imported below are compiled and included in the order
+ * they are listed.  Mixins, variables, etc. should be imported first
+ * so that they can be accessed by subsequent LESS stylesheets.
+ *
+ * (Just like the rest of the asset pipeline bundled in Sails, you can
+ * always omit, customize, or replace this behavior with SASS, SCSS,
+ * or any other Grunt tasks you like.)
+ */
+.mixin-button {
+  color: #FFF !important;
+  font-size: 22px !important;
+  background-color: #e32f25;
+  padding: 15px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block !important;
+}
+body {
+  background: url('../images/ccn_back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Georgia";
+  margin-bottom: 0;
+  margin-top: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+@media (max-width: 700px) {
+  body {
+    background-position-y: -85px;
+  }
+}
+.step2,
+.step3 {
+  line-height: 40px;
+}
+.overlay {
+  opacity: 0.7;
+  filter: alpha(opacity=20);
+  background-color: #000;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 50%;
+  position: fixed;
+}
+@media (max-width: 991px) {
+  .overlay {
+    width: 100%;
+    left: 0;
+  }
+}
+.white-overlay {
+  opacity: 0.7;
+  filter: alpha(opacity=20);
+  background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+.landing-page {
+  position: relative;
+  z-index: 20;
+}
+.main-container {
+  margin-left: 50%;
+  width: 50%;
+  margin-top: 0;
+  color: #FFF;
+}
+@media (max-width: 991px) {
+  .main-container {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.main-container .content-container {
+  padding: 40px 20px 20px 30px;
+}
+@media (max-width: 700px) {
+  .main-container .content-container {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+.main-container .first-text {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 52px;
+}
+.main-container .first-text.thank-you {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.main-container .second-text {
+  font-size: 48px;
+  line-height: 50px;
+  margin-top: 15px;
+}
+.main-container .third-text {
+  font-family: "Verdana";
+  font-size: 18px;
+  margin: 25px 0 50px 0;
+  line-height: 24px;
+}
+.main-container .third-text.thank-you {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.main-container .fourth-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0 35px 0;
+}
+.main-container .list-item {
+  font-size: 30px;
+  display: table;
+  margin-bottom: 25px;
+}
+.main-container .list-item .list-number {
+  font-size: 60px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.main-container .list-item .list-item-text {
+  display: table-cell;
+  padding-left: 10px;
+}
+.start-button-container {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+.start-button-container a {
+  color: #FFF !important;
+  font-size: 22px !important;
+  background-color: #e32f25;
+  padding: 15px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block !important;
+}
+.main-container-steps {
+  color: #000;
+  position: relative;
+  z-index: 20;
+}
+.main-container-steps .step-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+@media (max-width: 700px) {
+  .main-container-steps .step-title {
+    padding-top: 20px;
+  }
+}
+.main-container-steps .step-title span {
+  font-size: 35px;
+}
+.main-container-steps .step-subtitle {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 20px;
+}
+.main-container-steps .form-container {
+  max-width: 92%;
+  margin: 0 auto;
+  background-color: #FFF;
+  margin-top: 15px;
+}
+@media (max-width: 991px) {
+  .main-container-steps .form-container {
+    max-width: 100%;
+  }
+}
+.main-container-steps .form-container .inputs-container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+@media (max-width: 1070px) {
+  .main-container-steps .form-container .inputs-container {
+    max-width: 68%;
+  }
+}
+@media (max-width: 880px) {
+  .main-container-steps .form-container .inputs-container {
+    max-width: 99%;
+  }
+}
+@media (min-width: 1312px) {
+  .main-container-steps .form-container .inputs-container {
+    max-width: 700px;
+  }
+}
+.main-container-steps .form-container .inputs-container .required-label {
+  font-size: 13px;
+  color: #e32f25;
+  margin-bottom: 15px;
+}
+.main-container-steps .form-container .inputs-container .form-label,
+.main-container-steps .form-container .inputs-container .submission-input {
+  display: inline-block;
+}
+@media (max-width: 880px) {
+  .main-container-steps .form-container .inputs-container .submission-input {
+    width: calc(100% - 160px) !important;
+  }
+}
+.main-container-steps .form-container .inputs-container .long-input {
+  width: 220px;
+}
+.main-container-steps .form-container .inputs-container input {
+  height: 20px;
+}
+.main-container-steps .form-container .inputs-container .form-label {
+  width: 140px;
+  margin-bottom: 20px;
+}
+.main-container-steps .form-container .inputs-container .form-label .required-symbol {
+  color: #e32f25;
+  margin-left: 5px;
+}
+.main-container-steps .form-container .inputs-container .facebook-icon,
+.main-container-steps .form-container .inputs-container .twitter-icon,
+.main-container-steps .form-container .inputs-container .pinterest-icon {
+  margin-left: 50px;
+  background-repeat: no-repeat;
+  color: transparent;
+  background-size: 22px;
+  height: 23px;
+  width: 30px;
+}
+.main-container-steps .form-container .inputs-container .facebook-icon {
+  background: url('../images/facebook-icon-m.png') no-repeat;
+  background-size: 23px;
+}
+.main-container-steps .form-container .inputs-container .pinterest-icon {
+  background: url('../images/pinterest-icon-m.png') no-repeat;
+  background-size: 23px;
+}
+.main-container-steps .form-container .inputs-container .twitter-icon {
+  background: url('../images/twitter-icon-m.png') no-repeat;
+  background-size: 23px;
+}
+.main-container-steps .form-container .comscore-first-text {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+.main-container-steps .form-container .comscore-second-text,
+.main-container-steps .form-container .main-text {
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.main-container-steps .form-container .comscore-second-text a,
+.main-container-steps .form-container .main-text a {
+  display: block;
+  margin-top: 10px;
+  color: #15c;
+}
+.main-container-steps .form-container .main-text {
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.main-container-steps .form-container .secondary-text {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.main-container-steps .form-container .secondary-text a {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #15c;
+}
+.main-container-steps .form-container .secondary-text a.lower {
+  display: block;
+  margin-top: 15px;
+}
+.main-container-steps .form-container .last-text-container {
+  text-align: center;
+  font-size: 16px;
+}
+.main-container-steps .form-container .last-text-container input.comscore-code {
+  height: 30px;
+  margin: 20px 0;
+  width: 240px;
+  text-align: center;
+  background-color: #FDF4E6;
+  color: #B49991;
+  font-size: 16px;
+  border: 1px solid #B6B6B7;
+}
+.main-container-steps .form-container .step2-last-text {
+  margin-top: 20px;
+}
+input.button {
+  color: #FFF !important;
+  font-size: 22px !important;
+  background-color: #e32f25;
+  padding: 15px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+.errors {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 15px;
+  margin-bottom: 20px;
+}
